@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Вопросы по CSS</title>
+  </head>
+  <style>
+    .question {
+      position: relative;
+    }
+
+    .centered-container {
+      position: relative;
+      background: silver;
+      height: 200px;
+    }
+
+    .centered-container__bluebox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 20px;
+      width: 20px;
+      background: blue;
+    }
+
+    .centered-flexbox {
+      background: silver;
+      height: 200px;
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+    }
+
+    .centered-flexbox__bluebox {
+      margin: auto;
+      height: 20px;
+      width: 20px;
+      background: blue;
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="question">
+      <h1>Questions</h1>
+      <p class="red">
+        Important!: Не писать ответы прямо в Гист. Зделайте форк и отправте
+        ссылку на ответы.
+      </p>
+      <p>Ссылка на Sandbox: https://codesandbox.io/s/1f0dv?file=/index.html</p>
+      <h2>1. Сenter Blue Div</h2>
+      <p>
+        Исправь ошибку и зацентрируй голубой див елемент по вертикали и по
+        горизонтали по серому контейнеру.<br />
+      </p>
+
+      <div class="centered-container">
+        <div class="centered-container__bluebox"></div>
+      </div>
+    </div>
+    <div class="question">
+      <h2>1. Сenter Blue Div 2</h2>
+      <p>
+        Здесь голубой див должен быть зацентрирован по вертикали.<br />
+        Какая здесь была ошибка?
+      </p>
+
+      <div class="centered-flexbox">
+        <div class="centered-flexbox__bluebox"></div>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Сenter Blue Div 2</h2>
+      <p>
+        Здесь голубой див должен быть зацентрирован по вертикали и
+        горизонтали.<br />
+        Какая здесь была ошибка?
+      </p>
+
+      <div class="centered-flexbox">
+        <div class="centered-flexbox__bluebox"></div>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Сenter Blue Div 3</h2>
+      <p>
+        1. Какие варианты центрирования елемента по горизонтали еще знаете?
+        <pre>Answer =>     1) text-align: center;       2)margin: 0 auto; </pre>
+        <br />2. Какие варианты центрирования елемента по вертикали еще знаете?
+
+        <pre>vertical-align: middle;</pre>
+      </p>
+    </div>
+    <div class="question">
+      <h2>1. Сenter Blue Div 3</h2>
+      <p>
+        В чем разница между <code>display: block;</code> и
+        <code>display: inline;</code>?
+
+        <pre>Элементы типа «inline» занимают место только своими размерами.
+          Но на «inline» элементы не влияют некоторые «margin» и «padding».
+          элементы типа «block» занимают всю строку.
+          например: <code> < div ></code> и <code> < span ></code>
+        </pre>
+      </p>
+    </div>
+  </body>
+</html>
